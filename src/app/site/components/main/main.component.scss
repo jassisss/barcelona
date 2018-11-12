@@ -1,0 +1,114 @@
+.site-icon {
+  padding: 0 14px;
+}
+.site-spacer {
+  flex: 1 1 auto;
+}
+.site-toolbar-height {
+  padding-top: 15px;
+  height: 90px;
+  background-color: #FFFAE4;
+}
+.social_icons {
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+.social-link {
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+.pay_icons {
+  list-style-type: none;
+  margin-left: 15px;
+  font-size: 28px;
+}
+
+.pay-group {
+  margin-top: 13px;
+}
+
+.pay-group li{
+  display: inline;
+}
+
+.footer_logo {
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+.footer-style-1 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background-color: #AA3256;
+  color: #FFF;
+  height: auto;
+}
+
+.footer-style-2 {
+  background-color: darkred;
+  color: #FFF;
+  font-size: small;
+  height: auto;
+}
+
+.footer_item_links {
+  color: #FFFAE4;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.footer_item_contacts {
+  color: #FFFAE4;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.footer_item {
+  font-size: medium;
+  font-weight: normal;
+}
+
+a.footer_item_links {
+  color:#FFFAE4;
+  font-weight: normal;
+}
+
+a.dev-for {
+  color:#FFFAE4;
+  font-weight: normal;
+}
+
+.input-form {
+  border: none;
+  background-color: #FFFAE4;
+  width: 400px;
+  border-radius: 0;
+  color: #AA3256;
+  margin-bottom: 0;
+}
+
+.btn-form {
+  width: 400px;
+  background-color: darkred;
+  border: none;
+  border-radius: 0;
+  color: #FFFAE4;
+  margin-top: 0;
+}
+.form-margin {
+  margin-bottom: 0;
+}
+
+.text-form {
+  font-size: 16px;
+  display: block;
+  width: 300px;
+  line-height: 1.3em;
+  font-weight: lighter;
+  text-align: center;
+  margin-left: 40px;
+}

@@ -1,22 +1,12 @@
-import {Component, OnInit} from '@angular/core';
-
-declare var $: any;
-
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+
+export class AppComponent {
   title = 'Barcelona';
 
-  ngOnInit() {
-    $(function () {
-      $('#sortable').sortable().disableSelection();
-      $('#btn1').click(function() {
-        $('#hide').toggle('hide');
-      });
-    });
-  }
 }
