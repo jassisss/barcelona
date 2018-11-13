@@ -15,7 +15,7 @@ export class MainComponent implements OnInit {
     // BACK TO TOP BUTTON ///////////////////////////////////////////////////////////////////////////////////////////////////////
     $(document).ready(function(){
       $(window).on('scroll', function(){
-        if ( $(this).scrollTop() > 300 ) {
+        if ( $(this).scrollTop() > 200 ) {
           $('#back_top').fadeIn("slow");
         }
         else {
