@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SiteRoutingModule } from './site-routing.module';
 import { MainComponent } from './components/main/main.component';
 import {MatButtonModule, MatIconModule, MatToolbarModule} from '@angular/material';
-import {ButtonsModule, CarouselModule, IconsModule, NavbarModule, WavesModule} from 'angular-bootstrap-md';
+import {ButtonsModule, CarouselModule, NavbarModule, WavesModule} from 'angular-bootstrap-md';
 
 @NgModule({
   imports: [
@@ -16,8 +16,7 @@ import {ButtonsModule, CarouselModule, IconsModule, NavbarModule, WavesModule} f
     CarouselModule,
     WavesModule,
     ButtonsModule,
-    NavbarModule,
-    IconsModule
+    NavbarModule
   ],
   declarations: [MainComponent]
 })
