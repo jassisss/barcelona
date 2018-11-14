@@ -18,6 +18,7 @@ import {ButtonsModule, CarouselModule, IconsModule, NavbarModule, WavesModule} f
     ButtonsModule,
     NavbarModule,
     IconsModule
+
   ],
   declarations: [MainComponent]
 })
