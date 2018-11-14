@@ -1,27 +1,183 @@
 @media (max-width: 575.98px) {
+
+  .site-toolbar-height {
+    padding-top: 4px;
+    height: 60px;
+    background-color: #FFFAE4;
+  }
+
   .footer_item_links {
-    display: none;
+    display: block;
   }
   .imglogo {
     width: 60px;
     height: 37px;
-    background: url("../../../../assets/img/app/logo-barcelona-cafe-02.png") no-repeat;
+    background: url("/../../../../assets/img/app/logo-barcelona-cafe-02.png") no-repeat;
     background-size: cover;
+  }
+
+  .input-form {
+    border: none;
+    background-color: #FFFAE4;
+    width: 100%;
+    border-radius: 0;
+    color: #AA3256;
+    margin-bottom: 0;
+  }
+
+  .btn-form {
+    width: 100%;
+    background-color: darkred;
+    border: none;
+    border-radius: 0;
+    color: #FFFAE4;
+    margin-top: 0;
+  }
+
+  .text-form {
+    font-size: 16px;
+    display: block;
+    max-width: 100%;
+    line-height: 1.3em;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0 40px;
+  }
+
+  .social_icons {
+    list-style-type: none;
+    padding: 0 4px;
+  }
+
+  .social-link {
+    padding-top: 20px;
+    margin: 0 5%;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  .site-toolbar-height {
+    padding-top: 15px;
+    height: 90px;
+    background-color: #FFFAE4;
+  }
+
   .footer_item_links {
-    display: none;
+    display: block;
   }
   .imglogo {
     width: 105px;
     height: 65px;
-    background: url("../../../../assets/img/app/logo-barcelona-cafe-02.png") no-repeat;
+    background: url("/../../../../assets/img/app/logo-barcelona-cafe-02.png") no-repeat;
   }
+
+  .input-form {
+    border: none;
+    background-color: #FFFAE4;
+    width: 100%;
+    border-radius: 0;
+    color: #AA3256;
+    margin-bottom: 0;
+  }
+
+  .btn-form {
+    width: 100%;
+    background-color: darkred;
+    border: none;
+    border-radius: 0;
+    color: #FFFAE4;
+    margin-top: 0;
+  }
+
+  .text-form {
+    font-size: 16px;
+    display: block;
+    max-width: 100%;
+    line-height: 1.3em;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  .social_icons {
+    list-style-type: none;
+    margin-left: 15px;
+  }
+
+  .social-link {
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .site-toolbar-height {
+    padding-top: 15px;
+    height: 90px;
+    background-color: #FFFAE4;
+  }
+
+  .footer_item_links {
+    display: block;
+  }
+  .imglogo {
+    margin-top: 15px;
+    width: 105px;
+    height: 65px;
+    background: url("/../../../../assets/img/app/logo-barcelona-cafe-02.png") no-repeat;
+  }
+
+  .input-form {
+    border: none;
+    background-color: #FFFAE4;
+    width: 100%;
+    border-radius: 0;
+    color: #AA3256;
+    margin-bottom: 0;
+  }
+
+  .btn-form {
+    width: 100%;
+    background-color: darkred;
+    border: none;
+    border-radius: 0;
+    color: #FFFAE4;
+    margin-top: 0;
+  }
+
+  .text-form {
+    font-size: 16px;
+    display: block;
+    max-width: 100%;
+    line-height: 1.3em;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  .social_icons {
+    list-style-type: none;
+    margin-left: 15px;
+  }
+
+  .social-link {
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .site-toolbar-height {
+    padding-top: 15px;
+    height: 90px;
+    background-color: #FFFAE4;
+  }
+
   .footer_item_links {
     display: block;
   }
@@ -29,8 +185,105 @@
     margin-top: 15px;
     width: 400px;
     height: 90px;
-    background: url("../../../../assets/img/app/bc_logo_header_footer_03.png") no-repeat;
+    background: url("/../../../../assets/img/app/bc_logo_header_footer_03.png") no-repeat;
   }
+
+  .input-form {
+    border: none;
+    background-color: #FFFAE4;
+    width: 380px;
+    border-radius: 0;
+    color: #AA3256;
+    margin-bottom: 0;
+  }
+
+  .btn-form {
+    width: 380px;
+    background-color: darkred;
+    border: none;
+    border-radius: 0;
+    color: #FFFAE4;
+    margin-top: 0;
+  }
+
+  .text-form {
+    font-size: 16px;
+    display: block;
+    max-width: 300px;
+    line-height: 1.3em;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  .social_icons {
+    list-style-type: none;
+    margin-left: 15px;
+  }
+
+  .social-link {
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .site-toolbar-height {
+    padding-top: 15px;
+    height: 90px;
+    background-color: #FFFAE4;
+  }
+
+  .footer_item_links {
+    display: block;
+  }
+  .imglogo {
+    margin-top: 15px;
+    width: 400px;
+    height: 90px;
+    background: url("/../../../../assets/img/app/bc_logo_header_footer_03.png") no-repeat;
+  }
+
+  .input-form {
+    border: none;
+    background-color: #FFFAE4;
+    width: 380px;
+    border-radius: 0;
+    color: #AA3256;
+    margin-bottom: 0;
+  }
+
+  .btn-form {
+    width: 380px;
+    background-color: darkred;
+    border: none;
+    border-radius: 0;
+    color: #FFFAE4;
+    margin-top: 0;
+  }
+
+  .text-form {
+    font-size: 16px;
+    display: block;
+    max-width: 300px;
+    line-height: 1.3em;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  .social_icons {
+    list-style-type: none;
+    margin-left: 15px;
+  }
+
+  .social-link {
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
 }
 
 .site-icon {
@@ -39,22 +292,6 @@
 
 .site-spacer {
   flex: 1 1 auto;
-}
-
-.site-toolbar-height {
-  padding-top: 15px;
-  height: 90px;
-  background-color: #FFFAE4;
-}
-
-.social_icons {
-  list-style-type: none;
-  margin-left: 15px;
-}
-
-.social-link {
-  padding-top: 20px;
-  margin-left: 20px;
 }
 
 .pay_icons {
@@ -124,24 +361,6 @@
 a.dev-for {
   color: #FFFAE4;
   font-weight: normal;
-}
-
-.input-form {
-  border: none;
-  background-color: #FFFAE4;
-  width: 380px;
-  border-radius: 0;
-  color: #AA3256;
-  margin-bottom: 0;
-}
-
-.btn-form {
-  width: 380px;
-  background-color: darkred;
-  border: none;
-  border-radius: 0;
-  color: #FFFAE4;
-  margin-top: 0;
 }
 
 .form-margin {
