@@ -1,19 +1,18 @@
-
-<!--<mat-toolbar class="mat-elevation-z6 site-toolbar-height">
+<mat-toolbar class="mat-elevation-z6 site-toolbar-top" color="accent">
 
   <mat-toolbar-row>
-    <div class="imglogo"></div>
+    <span>Bem vindos</span>
     <span class="site-spacer"></span>
-    &lt;!&ndash; Collapsible content &ndash;&gt;
-    <nav class="nav grey lighten-4 py-4">
-      <a class="nav-link active" href="#">Active</a>
-      <a class="nav-link" href="#">Link</a>
-      <a class="nav-link" href="#">Link</a>
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </nav>
+    <span>Login
+      <a routerLink=".">
+      <button mat-icon-button color="primary">
+        <mat-icon aria-label="Example icon-button with a heart icon">input</mat-icon>
+      </button>
+    </a>
+    </span>
   </mat-toolbar-row>
 
-</mat-toolbar>-->
+</mat-toolbar>
 
 <!-- Just an image -->
 <mdb-navbar SideClass="navbar navbar-light navbar-expand-xl yellow lighten-5">
@@ -29,21 +28,21 @@
     <!-- Links -->
 
     <!-- Links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active" routerLinkActive="active">
+    <ul id="top" class="navbar-nav mr-auto">
+      <li id="ini" class="nav-item active">
         <a href="#site" class="nav-link waves-light" mdbWavesEffect>Site<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a href="#products"  class="nav-link waves-light" mdbWavesEffect>Produtos</a>
+      <li class="nav-item">
+        <a href="#products" class="nav-link waves-light" mdbWavesEffect>Produtos</a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a href="#about"  class="nav-link waves-light" mdbWavesEffect>Sobre nós</a>
+      <li class="nav-item">
+        <a href="#about" class="nav-link waves-light" mdbWavesEffect>Sobre nós</a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a href="#contact"  class="nav-link waves-light" mdbWavesEffect>Entre em contato</a>
+      <li class="nav-item">
+        <a href="#contact" class="nav-link waves-light" mdbWavesEffect>Entre em contato</a>
       </li>
     </ul>
-      <!-- Links -->
+    <!-- Links -->
 
   </links>
 
@@ -53,7 +52,7 @@
   <!--First slide-->
   <mdb-carousel-item>
     <div class="view w-100">
-      <img class="d-block w-100" src="/../../../../assets/img/app/slide1_2048x811_crop_center.jpg" alt="First slide">
+      <img class="d-block w-100" src="../../../../assets/img/app/slide1_2048x811_crop_center.jpg" alt="First slide">
       <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
     </div>
     <div class="carousel-caption">
@@ -65,7 +64,7 @@
   <!--Second slide-->
   <mdb-carousel-item>
     <div class="view w-100">
-      <img class="d-block w-100" src="/../../../../assets/img/app/slide2_2048x811_crop_center.jpg" alt="Second slide">
+      <img class="d-block w-100" src="../../../../assets/img/app/slide2_2048x811_crop_center.jpg" alt="Second slide">
       <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
     </div>
     <div class="carousel-caption">
@@ -79,7 +78,7 @@
   <!--Third slide-->
   <mdb-carousel-item>
     <div class="view w-100">
-      <img class="d-block w-100" src="/../../../../assets/img/app/slide3_2048x811_crop_center.jpg" alt="Third slide">
+      <img class="d-block w-100" src="../../../../assets/img/app/slide3_2048x811_crop_center.jpg" alt="Third slide">
       <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
     </div>
     <div class="carousel-caption">
@@ -90,7 +89,7 @@
   <!--/Third slide-->
 </mdb-carousel>
 <!--/.Carousel Wrapper-->
-<section id="products" style="padding-top: 6vh;">
+<section id="products" style="padding-top: 4vh;">
 
   <div id="shopify-section-template-collection" class="shopify-section section_template section_template__collection">
 
@@ -136,7 +135,7 @@
 
 <div>
   <div class="view w-100">
-    <img class="d-block w-100" src="/../../../../assets/img/app/parallax1_2048x1054_crop_center.jpg" alt="First slide">
+    <img class="d-block w-100" src="../../../../assets/img/app/parallax1_2048x1054_crop_center.jpg" alt="First slide">
     <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
   </div>
   <div class="carousel-caption1">
@@ -146,7 +145,7 @@
 </div>
 
 
-<section id="about" style="padding-top: 6vh;">
+<section id="about" style="padding-top: 4vh;">
 
   <div id="shopify-section-template-about-us" class="shopify-section section section_template section_template__about">
     <div class="container">
@@ -179,7 +178,7 @@
 
 <div>
   <div class="view w-100">
-    <img class="d-block w-100" src="/../../../../assets/img/app/mt-1408-home-parallax3.jpg" alt="First slide">
+    <img class="d-block w-100" src="../../../../assets/img/app/mt-1408-home-parallax3.jpg" alt="First slide">
     <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
   </div>
   <div class="carousel-caption2">
@@ -188,14 +187,16 @@
   </div>
 </div>
 
-<section id="contact" style="padding-top: 6vh;">
+<section id="contact" style="padding-top: 4vh;">
 
   <div class="template_contact">
     <div class="container">
       <h1 class="page_heading">Entre em contato</h1>
 
       <div class="rte">
-        Você pode nos contatar de qualquer maneira que seja conveniente para você. Estamos disponíveis email ou telefone. Você também pode usar um formulário de contato rápido abaixo ou visitar nossa loja pessoalmente. Envie-nos um e-mail com dúvidas ou perguntas. Nós ficaríamos felizes em responder-lhe.
+        Você pode nos contatar de qualquer maneira que seja conveniente para você. Estamos disponíveis email ou
+        telefone. Você também pode usar um formulário de contato rápido abaixo ou visitar nossa loja pessoalmente.
+        Envie-nos um e-mail com dúvidas ou perguntas. Nós ficaríamos felizes em responder-lhe.
       </div>
 
     </div>
@@ -214,7 +215,7 @@
 
       <div class="col-md-5 mt-md-0 mt-3">
         <a class="footer_logo" href="/">
-          <img src="/../../../../assets/img/app/bc_logo_header_footer_04.png" alt="Barcelona Café" width="400"
+          <img src="../../../../assets/img/app/bc_logo_header_footer_04.png" alt="Barcelona Café" width="400"
                class="img-fluid">
         </a>
 
@@ -379,7 +380,7 @@
 </footer>
 
 
-<a id="back_top" href="/">
+<a id="back_top" href="">
   <i class="fa fa-angle-up" aria-hidden="true"></i>
 </a>
 

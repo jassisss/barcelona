@@ -286,6 +286,23 @@
 
 }
 
+.site-toolbar-top {
+  height: 30px !important;
+  font-weight: normal;
+  font-size: .9em;
+  padding: 0;
+  margin: 0;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  margin-top: 10px;
+  height: 10px !important;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 25px !important;
+}
+
 .site-icon {
   padding: 0 14px;
 }
