@@ -14,195 +14,50 @@
 
 </mat-toolbar>
 
-<!-- Just an image -->
-<mdb-navbar SideClass="navbar navbar-light navbar-expand-xl yellow lighten-5">
-  <mdb-navbar-brand>
-    <a class="navbar-brand" href="#">
-      <div class="imglogo"></div>
-    </a>
-  </mdb-navbar-brand>
+<nav id="navbar-menu" class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFFAE4;">
+  <a class="navbar-brand" href="#">
+    <div class="imglogo"></div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <!-- Collapsible content -->
-  <links>
-
-    <!-- Links -->
-
-    <!-- Links -->
-    <ul id="top" class="navbar-nav mr-auto">
-      <li id="ini" class="nav-item active">
-        <a href="#site" class="nav-link waves-light" mdbWavesEffect>Site<span class="sr-only">(current)</span></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-nav nav-pills nav-dark mr-auto" style="background-color: #FFFAE4;">
+      <li class="nav-item active">
+        <a class="nav-link" href="#site">Site <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a href="#products" class="nav-link waves-light" mdbWavesEffect>Produtos</a>
+        <a class="nav-link" href="#products">Produtos</a>
       </li>
       <li class="nav-item">
-        <a href="#about" class="nav-link waves-light" mdbWavesEffect>Sobre nós</a>
+        <a class="nav-link" href="#about">Sobre nós</a>
       </li>
       <li class="nav-item">
-        <a href="#contact" class="nav-link waves-light" mdbWavesEffect>Entre em contato</a>
+        <a class="nav-link" href="#contact">Contato</a>
       </li>
     </ul>
-    <!-- Links -->
-
-  </links>
-
-</mdb-navbar>
-<!--Carousel Wrapper-->
-<mdb-carousel id="site" [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
-  <!--First slide-->
-  <mdb-carousel-item>
-    <div class="view w-100">
-      <img class="d-block w-100" src="../../../../assets/img/app/slide1_2048x811_crop_center.jpg" alt="First slide">
-      <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
-    </div>
-    <div class="carousel-caption">
-      <h3 class="h3-responsive">Bolos personalizados!</h3>
-      <p>Escolha seu preenchimento. Escolha seu favorito.</p>
-    </div>
-  </mdb-carousel-item>
-  <!--/First slide-->
-  <!--Second slide-->
-  <mdb-carousel-item>
-    <div class="view w-100">
-      <img class="d-block w-100" src="../../../../assets/img/app/slide2_2048x811_crop_center.jpg" alt="Second slide">
-      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
-    </div>
-    <div class="carousel-caption">
-      <h3 class="h3-responsive">+55 (62) 3624-5611</h3>
-      <p>Faça seu pedido. Horário: 8:00 - 18:00</p>
-      <div class="up-title"></div>
-
-    </div>
-  </mdb-carousel-item>
-  <!--/Second slide-->
-  <!--Third slide-->
-  <mdb-carousel-item>
-    <div class="view w-100">
-      <img class="d-block w-100" src="../../../../assets/img/app/slide3_2048x811_crop_center.jpg" alt="Third slide">
-      <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-    </div>
-    <div class="carousel-caption">
-      <h3 class="h3-responsive">Visite nosso café</h3>
-      <p>Desfrute de alguns deliciosos petiscos disponíveis apenas no nosso café</p>
-    </div>
-  </mdb-carousel-item>
-  <!--/Third slide-->
-</mdb-carousel>
-<!--/.Carousel Wrapper-->
-<section id="products" style="padding-top: 4vh;">
-
-  <div id="shopify-section-template-collection" class="shopify-section section_template section_template__collection">
-
-    <div class="container">
-      <h1 class="page_heading">Produtos</h1>
-    </div>
-
-    <div class="container">
-
-      <div class="button_filters">
-        <ul>
-          <li class="active">
-            <a href="">All</a>
-          </li>
-
-          <li>
-            <a href="" title="Chocolate Dipped Cookies">Bolinhos mergulhados de chocolate</a>
-          </li>
-
-          <li>
-            <a href="" title="Colored Sprinkle Cookies">Bolinhos coloridos e polvilhados</a>
-          </li>
-
-          <li>
-            <a href="" title="Raspberry Hamantashen">Hamantashen de framboesa</a>
-          </li>
-
-          <li>
-            <a href="" title="Ready-made Decorations">Decorações prontas</a>
-          </li>
-
-          <li>
-            <a href="" title="Vanilla Cookies">Bolinhos de Baunilha</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-
   </div>
+</nav>
 
-</section>
+<div class="nav-scroll" data-spy="scroll" data-target="#navbar-menu" data-offset="0">
+  <section id="site">
+    <span>Site</span>
+  </section>
 
-<div>
-  <div class="view w-100">
-    <img class="d-block w-100" src="../../../../assets/img/app/parallax1_2048x1054_crop_center.jpg" alt="First slide">
-    <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
-  </div>
-  <div class="carousel-caption1">
-    <h3 class="h3-responsive">Bolos de dar água na boca</h3>
-    <p>Por encomenda.</p>
-  </div>
+  <section id="products">
+    <span>Produtos</span>
+  </section>
+
+  <section id="about">
+    <span>Sobre</span>
+  </section>
+
+  <section id="contact">
+    <span>Contato</span>
+  </section>
 </div>
-
-
-<section id="about" style="padding-top: 4vh;">
-
-  <div id="shopify-section-template-about-us" class="shopify-section section section_template section_template__about">
-    <div class="container">
-
-      <h1 class="page_heading">Sobre nós</h1>
-
-      <div class="page_content">
-
-        <div class="page_content__block page_content__text">
-
-          <h2 class="block_title">Atendendo às suas necessidades, cuidando das suas necessidades com cuidado.</h2>
-
-          <div class="block_content rte">
-            <p>
-              Nossa loja é mais do que apenas outro varejista on-line médio. Nós vendemos não apenas produtos de alta
-              qualidade, mas também oferecemos aos nossos clientes uma experiência positiva de compras on-line. Esqueça
-              se esforçar para fazer tudo de uma vez: cuidar da família, administrar o seu negócio, passear com o
-              cachorro, limpar a casa, fazer compras, etc. Compre os bens que você precisa todos os dias ou simplesmente
-              em alguns cliques ou toques, dependendo do dispositivo que você usa para acessar a Internet. Nós
-              trabalhamos para tornar sua vida mais agradável.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<div>
-  <div class="view w-100">
-    <img class="d-block w-100" src="../../../../assets/img/app/mt-1408-home-parallax3.jpg" alt="First slide">
-    <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
-  </div>
-  <div class="carousel-caption2">
-    <h3 class="h3-responsive">O almoço caseiro como você gosta</h3>
-    <p>Entrgamos em sua casa.</p>
-  </div>
-</div>
-
-<section id="contact" style="padding-top: 4vh;">
-
-  <div class="template_contact">
-    <div class="container">
-      <h1 class="page_heading">Entre em contato</h1>
-
-      <div class="rte">
-        Você pode nos contatar de qualquer maneira que seja conveniente para você. Estamos disponíveis email ou
-        telefone. Você também pode usar um formulário de contato rápido abaixo ou visitar nossa loja pessoalmente.
-        Envie-nos um e-mail com dúvidas ou perguntas. Nós ficaríamos felizes em responder-lhe.
-      </div>
-
-    </div>
-  </div>
-
-</section>
 
 <!-- Footer -->
 <footer class="page-footer">
@@ -226,7 +81,7 @@
             <li class="social_icons">
               <button mat-mini-fab>
                 <mat-icon color="primary" title="Facebook">
-                  <a href="https://www.facebook.com/">
+                  <a href="https://www.facebook.com/" target="_blank">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                   </a>
                 </mat-icon>

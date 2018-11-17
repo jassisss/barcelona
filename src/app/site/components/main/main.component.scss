@@ -418,3 +418,51 @@ a.dev-for {
   background: #000
 }
 
+#navbar-menu{
+  position: fixed;
+  background-color:#FFFAE4;
+}
+
+a.nav-item:active {
+  background-color: lightgray !important;
+  color: #333333;
+}
+a.nav-link:active {
+  background-color: lightgray !important;
+  color: #333333;
+}
+a.nav-link:hover {
+  background-color: greenyellow !important;
+  color: darkred;
+}
+a.nav-link:after {
+  background-color: lightgray !important;
+  color: #333333;
+}
+
+.nav-scroll {
+  position: relative;
+  overflow-y: scroll;
+}
+
+div section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+div section span{
+  color:white;
+  width: 100%;
+  text-align: center;
+  font-size: 15vw;
+  text-shadow: 0 0 7px #aaa;
+  transition: opacity 0.5s;
+}
+
+#site { background-color: green; }
+#products { background-color: yellow; }
+#about { background-color: blueviolet; }
+#contact { background-color: magenta; }
+
+
