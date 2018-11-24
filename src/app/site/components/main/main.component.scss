@@ -1,3 +1,107 @@
+
+//
+// Color system
+//
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+    (
+      "100": $gray-100,
+      "200": $gray-200,
+      "300": $gray-300,
+      "400": $gray-400,
+      "500": $gray-500,
+      "600": $gray-600,
+      "700": $gray-700,
+      "800": $gray-800,
+      "900": $gray-900
+    ),
+    $grays
+);
+
+$se-bc:   #AA3256 !default;
+$bg-bc:   #FFFAE4 !default;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+    (
+      "blue":       $blue,
+      "indigo":     $indigo,
+      "purple":     $purple,
+      "pink":       $pink,
+      "red":        $red,
+      "orange":     $orange,
+      "yellow":     $yellow,
+      "green":      $green,
+      "teal":       $teal,
+      "cyan":       $cyan,
+      "white":      $white,
+      "gray":       $gray-600,
+      "gray-dark":  $gray-800,
+      "se-bc":      $se-bc,
+      "bg-bd":      $bg-bc
+    ),
+    $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+$primary-bc:    $bg-bc !default;
+$secondary-bc:  $se-bc !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+    (
+      "primary":    $primary,
+      "secondary":  $secondary,
+      "success":    $success,
+      "info":       $info,
+      "warning":    $warning,
+      "danger":     $danger,
+      "light":      $light,
+      "dark":       $dark,
+      "primary-bc": $primary-bc,
+      "secondary-bc": $secondary-bc
+    ),
+    $theme-colors
+);
+$navbar-light-color:                rgba($secondary-bc, 1) !default;
+$border-radius:                     .25rem !default;
+$nav-pills-border-radius:           $border-radius !default;
+$nav-pills-link-active-color:       rgba($dark,.3) !default;
+$nav-pills-link-active-bg:          rgba($secondary-bc,.4) !default;
+
 @media (max-width: 575.98px) {
 
   .site-toolbar-height {
@@ -286,12 +390,19 @@
 
 }
 
+#navbar-menu {
+  position: relative;
+  padding-bottom: 0;
+  padding-top: 15px;
+}
+
+
 .site-toolbar-top {
   height: 30px !important;
-  font-weight: normal;
-  font-size: .9em;
-  padding: 0;
-  margin: 0;
+  font-weight: lighter;
+  font-size: .8em;
+  padding: 10px;
+  margin-top: 0 !important;
 }
 
 .mat-toolbar-row, .mat-toolbar-single-row {
@@ -384,6 +495,7 @@ a.dev-for {
   margin-bottom: 0;
 }
 
+
 .text-form {
   font-size: 16px;
   display: block;
@@ -394,59 +506,17 @@ a.dev-for {
   margin-left: 40px;
 }
 
-.navbar.navbar-light .navbar-toggler {
-  color: #CCC;
-}
-
-#back_top {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.3);
-  font: 20px 'FontAwesome';
-  color: #fff;
-  text-align: center;
-  padding-top: 8px;
+.up-top {
   position: fixed;
-  right: 60px;
-  bottom: 60px;
-  z-index: 999;
-  display: none
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
 }
 
-#back_top:hover {
-  background: #000
-}
-
-#navbar-menu{
-  position: fixed;
-  background-color:#FFFAE4;
-}
-
-a.nav-item:active {
-  background-color: lightgray !important;
-  color: #333333;
-}
-a.nav-link:active {
-  background-color: lightgray !important;
-  color: #333333;
-}
-a.nav-link:hover {
-  background-color: greenyellow !important;
-  color: darkred;
-}
-a.nav-link:after {
-  background-color: lightgray !important;
-  color: #333333;
-}
-
-.nav-scroll {
-  position: relative;
-  overflow-y: scroll;
-}
 
 div section{
-  min-height: 100vh;
+  min-height: 300px;
   display: flex;
   align-items: center;
 }
@@ -465,4 +535,7 @@ div section span{
 #about { background-color: blueviolet; }
 #contact { background-color: magenta; }
 
+
+
+@import "../../../../../node_modules/bootstrap/scss/bootstrap";
 

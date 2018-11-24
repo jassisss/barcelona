@@ -1,20 +1,20 @@
-<mat-toolbar class="mat-elevation-z6 site-toolbar-top" color="accent">
+<mat-toolbar color="accent">
 
-  <mat-toolbar-row>
+  <mat-toolbar-row class="mat-elevation-z6 site-toolbar-top bg-secondary-bc" style="height: 30px !important;">
     <span>Bem vindos</span>
     <span class="site-spacer"></span>
     <span>Login
       <a routerLink=".">
-      <button mat-icon-button color="primary">
-        <mat-icon aria-label="Example icon-button with a heart icon">input</mat-icon>
-      </button>
-    </a>
+        <button mat-icon-button color="primary">
+          <mat-icon aria-label="Example icon-button with a heart icon">input</mat-icon>
+       </button>
+      </a>
     </span>
   </mat-toolbar-row>
 
 </mat-toolbar>
 
-<nav id="navbar-menu" class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFFAE4;">
+<nav id="navbar-menu" class="navbar navbar-expand-lg fixed-top navbar-light  bg-primary-bc">
   <a class="navbar-brand" href="#">
     <div class="imglogo"></div>
   </a>
@@ -24,9 +24,9 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="nav navbar-nav nav-pills nav-dark mr-auto" style="background-color: #FFFAE4;">
-      <li class="nav-item active">
-        <a class="nav-link" href="#site">Site <span class="sr-only">(current)</span></a>
+    <ul class="nav navbar-nav nav-pills mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#site">Site<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#products">Produtos</a>
@@ -40,6 +40,7 @@
     </ul>
   </div>
 </nav>
+
 
 <div class="nav-scroll" data-spy="scroll" data-target="#navbar-menu" data-offset="0">
   <section id="site">
@@ -233,10 +234,13 @@
   </div>
 
 </footer>
+<!--
 
-
-<a id="back_top" href="">
-  <i class="fa fa-angle-up" aria-hidden="true"></i>
-</a>
-
-
+-->
+<div class="up-top">
+  <a class="mat-elevation-z6" mat-mini-fab href="#">
+    <mat-icon color="primary" title="Top">
+      arrow_upward
+    </mat-icon>
+  </a>
+</div>

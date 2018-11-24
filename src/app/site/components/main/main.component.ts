@@ -18,44 +18,50 @@ export class MainComponent implements OnInit {
 
       (function () {
 
-        let idnav = $("#navbar-menu li.active a").attr("href");
-        idnav.parent().removeClass('active');
-
-        $("body").scrollspy({
-          target: "#navbar-menu",
-          offset: 101
+        $(`body`).scrollspy({
+          target: `#navbar-menu`,
+          offset: -30
         });
 
-        $(".nav-item").on("activate.bs.scrollspy", function () {
-          $("section span").css("opacity", 0);
-          alert('ggggg');
-          const id = $("#navbar-menu li.active a").attr("href");
-          const elemento = $(id).find("span");
+        $(`.nav-link`).click(function(event){
 
-          elemento.animate({opacity: 1}, 800);;
-
-        });
-
-        $(".nav-link").click(function(event){
           event.preventDefault();
-          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
+
+          let $meuPos = $(this.hash).offset().top;
+
+          let $tam = $(`#navbar-menu`).innerHeight();
+
+          console.log($meuPos + ' - ' + $tam);
+          $(`html,body`).animate({scrollTop:$(this.hash).offset().top - $tam}, 1200);
         });
 
       })();
 
 
-      if ($(this) > 200) {
-        $("#back_top").fadeIn("slow");
-      } else {
-        $("#back_top").fadeOut("slow");
-      }
+      $(`.up-top`).hide();
+      $(`#navbar-menu`).css(`position` , `relative`);
+      $(`#navbar-menu`).show(1000);
+      $(`html, body`).animate({scrollTop: 0}, 800);
 
+      $(window).scroll(function() {
 
-      $("#back_top").on("click", function (e) {
-        e.preventDefault();
-        $("html, body").animate({scrollTop: 0}, 800);
-        $("#back_top").fadeOut('slow').stop();
+        if($(this).scrollTop() > 1) {
+          $(`.up-top`).fadeIn(1000);
+          $(`#navbar-menu`).css(`position` , `fixed`);
+          $(`#navbar-menu`).show(1000);
+        }else{
+          $(`.up-top`).fadeOut(1000);
+          $(`#navbar-menu`).css(`position` , `relative`);
+        }
+
       });
+
+      $(`.up-top`).on(`click`, function (e) {
+        e.preventDefault();
+        $(`html, body`).animate({scrollTop: 0}, 800);
+        $(`.up-top`).fadeOut(500).stop();
+      });
+
 
     });
   }
