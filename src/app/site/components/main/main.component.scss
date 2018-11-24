@@ -435,10 +435,11 @@ $nav-pills-link-active-bg:          rgba($secondary-bc,.0) !default;
 }
 
 .scroll-container {
-  position: static;
   left: 0;
   top: 205px;
   height: auto;
+  width: 100%;
+  overflow-y: auto;
 }
 
 .mat-toolbar-row, .mat-toolbar-single-row {
@@ -485,7 +486,11 @@ $nav-pills-link-active-bg:          rgba($secondary-bc,.0) !default;
 }
 
 .page-footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
   padding: 0;
+  height: auto;
 }
 
 .footer-style-1 {
@@ -552,7 +557,7 @@ a.dev-for {
 
 
 div section{
-  min-height: 200vm;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -562,7 +567,7 @@ div section span{
   width: 100%;
   text-align: center;
   font-size: 15vw;
-  text-shadow: 0 0 7px #aaa;
+  text-shadow: 0 0 7px #000;
   transition: opacity 0.5s;
 }
 
