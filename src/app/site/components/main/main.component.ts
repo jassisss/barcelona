@@ -18,40 +18,44 @@ export class MainComponent implements OnInit {
 
       (function () {
 
+        let $offisetHeight = $(`#navbar-menu`).innerHeight();
+
+        $(`.scroll-container `).offset({top:$offisetHeight, left:`0`});
+
         $(`body`).scrollspy({
           target: `#navbar-menu`,
-          offset: -30
+          offset: $offisetHeight
         });
 
-        $(`.nav-link`).click(function(event){
+        $(window).resize(function () {
 
+          $offisetHeight = $(`#navbar-menu`).innerHeight();
+
+          $(`.scroll-container `).offset({top:$offisetHeight, left:`0`})
+
+          $(`body`).scrollspy({
+            target: `#navbar-menu`,
+            offset: $offisetHeight
+          });
+
+        })
+
+        $(`.nav-link`).click(function(event) {
           event.preventDefault();
-
-          let $meuPos = $(this.hash).offset().top;
-
-          let $tam = $(`#navbar-menu`).innerHeight();
-
-          console.log($meuPos + ' - ' + $tam);
-          $(`html,body`).animate({scrollTop:$(this.hash).offset().top - $tam}, 1200);
+          $(`html,body`).animate({scrollTop: $(this.hash).offset().top - $offisetHeight}, 1200);
         });
 
       })();
 
 
       $(`.up-top`).hide();
-      $(`#navbar-menu`).css(`position` , `relative`);
-      $(`#navbar-menu`).show(1000);
-      $(`html, body`).animate({scrollTop: 0}, 800);
 
       $(window).scroll(function() {
 
-        if($(this).scrollTop() > 1) {
+        if($(this).scrollTop() > 131) {
           $(`.up-top`).fadeIn(1000);
-          $(`#navbar-menu`).css(`position` , `fixed`);
-          $(`#navbar-menu`).show(1000);
         }else{
           $(`.up-top`).fadeOut(1000);
-          $(`#navbar-menu`).css(`position` , `relative`);
         }
 
       });
